@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>Welcome to the Quiz Challenge</h1>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-container" class="screen hidden">
+    <div id="timer-bar">
+      <div id="timer-progress"></div>
+    </div>
+    <div id="quiz-box">
+      <h2 id="question-text"></h2>
+      <ul id="answer-buttons"></ul>
+    </div>
+    <button id="next-btn" class="hidden">Next</button>
+  </div>
+
+  <!-- Result Screen -->
+  <div id="result-screen" class="screen hidden">
+    <h2>Quiz Completed!</h2>
+    <p>Your Score: <span id="final-score"></span></p>
+    <p>Total Time: <span id="total-time"></span></p>
+    <input id="username" placeholder="Enter your name" />
+    <button id="save-score-btn">Save Score</button>
+    <button id="view-scores-btn">View Leaderboard</button>
+  </div>
+
+  <!-- Leaderboard Screen -->
+  <div id="leaderboard-screen" class="screen hidden">
+    <h2>Leaderboard</h2>
+    <div id="high-scores"></div>
+    <button id="back-to-start-btn">Back to Start</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

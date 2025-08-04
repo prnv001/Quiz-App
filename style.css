@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.screen {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.screen.active,
+.screen:not(.hidden) {
+    display: flex;
+}
+
+button {
+    background: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #388e3c;
+}
+
+#timer-bar{
+    background: #ccc;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+     margin-bottom: 10px;
+}
+
+#timer-progress{
+  background: #4caf50;
+  height: 100%;
+  width: 100%;
+  transition: width 1s linear;
+}
+
+#answer-buttons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#answer-buttons li {
+  background: #eee;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#answer-buttons li:hover {
+  background: #ddd;
+}
+
+.correct {
+  background: #c8e6c9 !important;
+}
+
+.wrong {
+  background: #ffcdd2 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+#high-scores {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
